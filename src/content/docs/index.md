@@ -69,21 +69,3 @@ A quick reference page for important notation and formulas.
 | Module 3 | Probability Foundations | Coming next |
 | Module 4 | Random Variables and Distributions | Coming later |
 | Module 5 | Statistical Inference | Coming later |
-
-## Mathematical style
-
-Inline mathematics appears like this: $\mu$, $\bar{x}$, $s^2$, $\hat{p}$.
-
-Display mathematics appears like this:
-
-$$
-\bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i.
-$$
-
-## Teaching style
-
-Lectures are conversational.
-
-Notes are theoretical and descriptive.
-
-Exercises are challenging and designed to build real statistical maturity.
