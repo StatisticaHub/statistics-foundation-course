@@ -1,0 +1,17 @@
+title: Statistics Foundation
+description: A beginner-friendly foundation course in statistics by StatisticaHub.
+
+remote_theme: just-the-docs/just-the-docs
+
+url: "https://Statisticahub.github.io"
+baseurl: "/statistics-foundation-course"
+
+search_enabled: true
+heading_anchors: true
+color_scheme: light
+
+aux_links:
+  "StatisticaHub on GitHub":
+    - "https://github.com/Statisticahub/statistics-foundation-course"
+
+footer_content: "Copyright &copy; 2026 StatisticaHub. Built for statistics learners."
