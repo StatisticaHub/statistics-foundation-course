@@ -14,4 +14,6 @@ aux_links:
   "StatisticaHub on GitHub":
     - "https://github.com/Statisticahub/statistics-foundation-course"
 
-footer_content: "Copyright &copy; 2026 StatisticaHub. Built for statistics learners."
+footer_content: "Copyright &copy; 2026 My Academic Tutor. Built for statistics learners."
+
+permalink: pretty
