@@ -19,6 +19,11 @@ export default defineConfig({
       description:
         'A theoretical, beginner-friendly foundation course in statistics for university students by My Academic Tutor.',
 
+      logo: {
+        src: './src/assets/my-academic-tutor-logo.png',
+        alt: 'My Academic Tutor logo',
+      },
+
       customCss: ['./src/styles/custom.css'],
 
       components: {

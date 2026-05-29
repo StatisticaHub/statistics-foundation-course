@@ -1,51 +1,398 @@
-:root {
-  --sl-content-width: 62rem;
+:root,
+:root[data-theme='light'],
+:root[data-theme='dark'] {
+  /* Academic cream + navy palette */
+  --cream-bg: #f3eee4;
+  --cream-panel: #fbf8f1;
+  --cream-soft: #e9dfcf;
+  --cream-deep: #d8cfbf;
+  --navy: #102033;
+  --navy-soft: #1b2d42;
+  --muted-text: #2f2f2f;
+  --soft-text: #5b554e;
+  --border-soft: #cfc4b3;
+  --link-blue: #173b68;
+
+  /* Starlight core variables */
+  --sl-color-bg: var(--cream-bg);
+  --sl-color-bg-nav: var(--cream-soft);
+  --sl-color-bg-sidebar: var(--cream-panel);
+  --sl-color-bg-inline-code: #eee4d5;
+
+  --sl-color-text: var(--muted-text);
+  --sl-color-text-accent: var(--navy);
+  --sl-color-text-invert: #ffffff;
+
+  --sl-color-accent: var(--navy);
+  --sl-color-accent-high: var(--navy);
+  --sl-color-accent-low: #e4d8c7;
+
+  --sl-color-white: #ffffff;
+  --sl-color-black: #102033;
+
+  --sl-color-gray-1: #102033;
+  --sl-color-gray-2: #1b2d42;
+  --sl-color-gray-3: #4b5563;
+  --sl-color-gray-4: #9a9185;
+  --sl-color-gray-5: #cfc4b3;
+  --sl-color-gray-6: #e9dfcf;
+  --sl-color-gray-7: #fbf8f1;
+
+  --sl-content-width: 66rem;
   --sl-text-5xl: 3rem;
 }
 
-/* Better reading experience */
-.sl-markdown-content {
-  line-height: 1.78;
-  font-size: 1.02rem;
+/* Whole page */
+html,
+body {
+  background: var(--cream-bg) !important;
+  color: var(--muted-text) !important;
 }
 
-/* More breathing space between sections */
+/* Header */
+.header,
+header {
+  background: var(--cream-soft) !important;
+  border-bottom: 2px solid var(--navy) !important;
+}
+
+/* Top title */
+.site-title,
+.site-title span,
+.site-title a {
+  color: var(--navy) !important;
+  font-family: Georgia, 'Times New Roman', serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em;
+}
+
+/* Prevent title cutting too badly */
+.site-title {
+  font-size: clamp(1rem, 2vw, 1.65rem) !important;
+  line-height: 1.1 !important;
+  max-width: 68vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Circular cropped logo */
+.site-title img,
+.header img,
+.sl-nav img {
+  width: 3rem !important;
+  height: 3rem !important;
+  max-width: 3rem !important;
+  max-height: 3rem !important;
+  min-width: 3rem !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-radius: 999px !important;
+  border: 1px solid var(--border-soft);
+  background: var(--cream-panel);
+}
+
+/* Buttons and icons */
+button,
+button svg,
+.search-label,
+.search-label svg,
+summary,
+summary svg {
+  color: var(--navy) !important;
+}
+
+/* Main panels */
+main,
+.main-pane,
+.content-panel,
+.right-sidebar-panel {
+  background: var(--cream-bg) !important;
+  color: var(--muted-text) !important;
+}
+
+/* Top mobile/table of contents bar */
+.mobile-starlight-toc,
+mobile-starlight-toc,
+starlight-mobile-toc,
+.sl-mobile-toc {
+  background: var(--cream-bg) !important;
+  color: var(--navy) !important;
+  border-color: var(--border-soft) !important;
+}
+
+/* The actual mobile TOC dropdown/dark panel fix */
+mobile-starlight-toc *,
+starlight-mobile-toc *,
+.sl-mobile-toc *,
+details[open],
+details[open] *,
+summary,
+summary *,
+[aria-label='Table of contents'],
+[aria-label='Table of contents'] *,
+[aria-label='On this page'],
+[aria-label='On this page'] * {
+  background-color: transparent;
+  color: var(--navy) !important;
+}
+
+/* Force dropdown panels that became navy/dark to become cream */
+details[open] > div,
+details[open] ul,
+details[open] li,
+details[open] nav,
+.mobile-starlight-toc nav,
+.mobile-starlight-toc ul,
+.mobile-starlight-toc li,
+starlight-mobile-toc nav,
+starlight-mobile-toc ul,
+starlight-mobile-toc li {
+  background: var(--cream-panel) !important;
+  color: var(--navy) !important;
+  border-color: var(--border-soft) !important;
+}
+
+/* Breadcrumbs */
+.breadcrumbs,
+.breadcrumbs a,
+.breadcrumbs span {
+  color: var(--navy) !important;
+}
+
+/* Headings */
+.sl-markdown-content h1,
+.sl-markdown-content h2,
+.sl-markdown-content h3,
+.sl-markdown-content h4,
+.hero h1,
+.content-panel h1,
+.content-panel h2,
+.content-panel h3 {
+  font-family: Georgia, 'Times New Roman', serif !important;
+  color: var(--navy) !important;
+  letter-spacing: -0.02em;
+}
+
+.sl-markdown-content h1,
+.content-panel h1 {
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  border-bottom: 2px solid var(--border-soft);
+  padding-bottom: 1rem;
+  color: var(--navy) !important;
+}
+
 .sl-markdown-content h2 {
   margin-top: 2.8rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-soft);
 }
 
 .sl-markdown-content h3 {
   margin-top: 2rem;
 }
 
-/* Better tables */
+/* Body text */
+.sl-markdown-content,
+.sl-markdown-content p,
+.sl-markdown-content li,
+.sl-markdown-content td,
+.sl-markdown-content dd {
+  color: var(--muted-text) !important;
+  line-height: 1.78;
+  font-size: 1.04rem;
+}
+
+.sl-markdown-content strong {
+  color: var(--navy);
+}
+
+/* Links */
+.sl-markdown-content a {
+  color: var(--link-blue) !important;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  font-weight: 600;
+}
+
+/* Sidebar */
+.sidebar,
+.sidebar-pane,
+.sidebar-content {
+  background: var(--cream-panel) !important;
+  color: var(--muted-text) !important;
+}
+
+.sidebar-content a,
+.sidebar-content span,
+.sidebar-content li,
+.right-sidebar a,
+.right-sidebar span {
+  color: var(--navy-soft) !important;
+}
+
+.sidebar-content a[aria-current='page'],
+.sidebar-content a[aria-current='true'] {
+  color: var(--navy) !important;
+  font-weight: 700;
+  background: var(--cream-soft) !important;
+  border-radius: 0.5rem;
+}
+
+/* Right TOC */
+.right-sidebar,
+.right-sidebar-panel {
+  background: var(--cream-bg) !important;
+  color: var(--muted-text) !important;
+}
+
+.right-sidebar h2,
+.right-sidebar h3,
+.right-sidebar a {
+  color: var(--navy) !important;
+}
+
+/* Tables */
 .sl-markdown-content table {
   border-radius: 0.75rem;
   overflow: hidden;
+  background: var(--cream-panel);
+  border: 1px solid var(--border-soft);
 }
 
-/* Better blockquotes */
+.sl-markdown-content th {
+  background: var(--cream-soft);
+  color: var(--navy) !important;
+}
+
+.sl-markdown-content td,
+.sl-markdown-content th {
+  border-color: var(--border-soft);
+}
+
+/* Blockquotes */
 .sl-markdown-content blockquote {
-  border-left: 4px solid var(--sl-color-accent);
-  background: var(--sl-color-gray-6);
+  border-left: 5px solid var(--navy);
+  background: var(--cream-panel);
   border-radius: 0.75rem;
-  padding: 0.9rem 1.1rem;
+  padding: 1rem 1.2rem;
+  color: var(--muted-text) !important;
 }
 
-/* Better math display */
+/* Starlight callout boxes */
+.starlight-aside {
+  border-radius: 0.95rem;
+  margin: 1.5rem 0;
+  background: var(--cream-panel) !important;
+  border-color: var(--border-soft) !important;
+  color: var(--muted-text) !important;
+}
+
+.starlight-aside,
+.starlight-aside p,
+.starlight-aside li,
+.starlight-aside strong {
+  color: var(--muted-text) !important;
+}
+
+/* Math */
+.katex,
+.katex-display {
+  color: var(--navy) !important;
+}
+
 .katex-display {
   overflow-x: auto;
   overflow-y: hidden;
   padding: 0.9rem 0;
 }
 
-/* Make Starlight asides feel like premium lesson boxes */
-.starlight-aside {
-  border-radius: 0.9rem;
-  margin: 1.4rem 0;
+/* Cards */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+  gap: 1.1rem;
+  margin: 1.6rem 0;
 }
 
-/* Softer lesson spacing */
-.sl-markdown-content p {
-  margin-top: 0.9rem;
+.course-card {
+  border: 1px solid var(--border-soft);
+  border-radius: 1rem;
+  padding: 1.15rem;
+  background: var(--cream-panel);
+  box-shadow: 0 4px 16px rgba(16, 32, 51, 0.06);
+}
+
+.course-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--navy) !important;
+}
+
+.course-card p {
+  margin: 0.35rem 0 0.8rem 0;
+  color: var(--soft-text) !important;
+}
+
+.course-card a {
+  font-weight: 700;
+  color: var(--link-blue) !important;
+}
+
+/* Brand strip */
+.brand-strip {
+  border: 1px solid var(--border-soft);
+  background: var(--cream-soft);
+  border-radius: 1rem;
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.brand-strip p {
+  margin: 0.25rem 0;
+  color: var(--muted-text) !important;
+}
+
+/* Footer */
+.statisticahub-footer {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-soft);
+  color: var(--soft-text);
+  font-size: 0.9rem;
+}
+
+.statisticahub-footer strong {
+  color: var(--navy);
+}
+
+/* Code */
+.sl-markdown-content code {
+  background: #eee4d5;
+  color: var(--navy);
+  border-radius: 0.25rem;
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+  .site-title {
+    font-size: 1rem !important;
+    max-width: 60vw;
+  }
+
+  .site-title img,
+  .header img,
+  .sl-nav img {
+    width: 2.45rem !important;
+    height: 2.45rem !important;
+    max-width: 2.45rem !important;
+    max-height: 2.45rem !important;
+    min-width: 2.45rem !important;
+  }
+
+  .sl-markdown-content h1,
+  .content-panel h1 {
+    font-size: 2.15rem;
+  }
 }

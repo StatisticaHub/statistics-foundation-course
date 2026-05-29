@@ -5,7 +5,7 @@ description: A theoretical, beginner-friendly foundation course in statistics fo
 
 <div class="brand-strip">
 
-<p><strong>Course developed by StatisticaHub.</strong></p>
+<p><strong>Course developed by My Academic Tutor.</strong></p>
 <p>© 2026 My Academic Tutor. All rights reserved.</p>
 
 </div>

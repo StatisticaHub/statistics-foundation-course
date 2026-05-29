@@ -3,7 +3,7 @@ title: About
 description: About the Statistics Foundation course.
 ---
 
-Statistics Foundation for University Students is a theoretical, beginner-friendly course developed by StatisticaHub.
+Statistics Foundation for University Students is a theoretical, beginner-friendly course developed by My Academic Tutor.
 
 The course is designed for students who want to build a strong foundation in statistics before moving into biostatistics, epidemiology, machine learning, data science, research methods, or quantitative analysis.
 
@@ -37,7 +37,7 @@ Exercises are intentionally challenging and include conceptual, applied, mathema
 
 ## Copyright and use
 
-Course developed by StatisticaHub.
+Course developed by My Academic Tutor.
 
 © 2026 My Academic Tutor. All rights reserved.
 
