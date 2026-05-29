@@ -2,6 +2,7 @@
 title: Lecture 3 - Types of Data and Measurement Scales
 parent: Lectures
 nav_order: 3
+permalink: /lectures/03-types-of-data-and-measurement-scales/
 ---
 
 # Lecture 3: Types of Data and Measurement Scales
@@ -12,13 +13,17 @@ Scene: Mr. R writes four words on the board:
 
 > Nominal, Ordinal, Interval, Ratio
 
-**Oliver:** Mr. R, these words already look technical.
+**Oliver:** These words already sound difficult.
 
-**Mr. R:** They are technical, but the idea is simple. Different types of data carry different amounts of information.
+**Mr. R:** They look technical, but the idea is simple. Different variables carry different kinds of information.
 
-**Emma:** So not every variable should be treated in the same way?
+**Emma:** So not all data should be summarised in the same way?
 
-**Mr. R:** Exactly. The type of variable determines what summaries and comparisons are meaningful.
+**Mr. R:** Exactly.
+
+**James:** Does this affect what methods we can use later?
+
+**Mr. R:** Yes. The type of data affects the summaries, comparisons, and interpretations that are meaningful.
 
 ---
 
@@ -30,16 +35,14 @@ A variable may describe:
 
 - names or categories;
 - ordered categories;
-- numerical values without a true zero;
-- numerical values with a true zero.
+- numerical values with meaningful differences;
+- numerical values with meaningful ratios.
 
-These lead to different measurement scales.
+This gives us different measurement scales.
 
 ---
 
 ## Qualitative and quantitative variables
-
-**Mr. R:** A variable may be qualitative or quantitative.
 
 A **qualitative variable** describes categories.
 
@@ -48,52 +51,54 @@ Examples:
 - blood group;
 - sex;
 - smoking status;
-- type of school.
+- treatment group;
+- eye colour.
 
 A **quantitative variable** describes numerical measurements or counts.
 
 Examples:
 
-- height;
 - age;
+- height;
+- weight;
 - income;
-- number of children;
-- systolic blood pressure.
+- blood pressure;
+- number of children.
 
-**James:** So if the values are numbers, the variable is always quantitative?
+**Oliver:** If a variable uses numbers, is it always quantitative?
 
-**Mr. R:** Not necessarily. Phone numbers and ID numbers are numeric labels, but they are not quantitative measurements.
+**Mr. R:** Good question. No. A student ID may be numeric, but it is not a measurement.
 
 ---
 
 ## Nominal scale
 
-A nominal variable has categories with no natural order.
+A **nominal variable** has categories with no natural order.
 
 Examples:
 
 - blood group: A, B, AB, O;
 - eye colour;
 - marital status;
-- type of treatment group.
+- treatment group.
 
-**Emma:** Since there is no order, we should not say one category is greater than another.
+For a nominal variable, we can count frequencies.
 
-**Mr. R:** Correct.
-
-For a nominal variable, we can count frequencies and proportions.
-
-If category \(A\) appears \(f_A\) times in a sample of size \(n\), then the sample proportion is
+If category \(A\) appears \(f_A\) times in a sample of size \(n\), the sample proportion is
 
 $$
 \hat{p}_A = \frac{f_A}{n}.
 $$
 
+**Emma:** So with nominal data, we can say how common each category is.
+
+**Mr. R:** Correct.
+
 ---
 
 ## Ordinal scale
 
-An ordinal variable has categories with a meaningful order.
+An **ordinal variable** has categories with a meaningful order.
 
 Examples:
 
@@ -101,11 +106,11 @@ Examples:
 - mild, moderate, severe;
 - strongly disagree, disagree, neutral, agree, strongly agree.
 
-**Oliver:** So ordinal data has order, but the gaps may not be equal?
+**James:** So ordinal data has order, but the distance between categories may not be equal.
 
 **Mr. R:** Exactly.
 
-**Sophia:** That means the difference between mild and moderate may not be the same as the difference between moderate and severe.
+**Sophia:** The difference between mild and moderate may not equal the difference between moderate and severe.
 
 **Mr. R:** Correct.
 
@@ -113,9 +118,9 @@ Examples:
 
 ## Interval scale
 
-An interval variable is numerical, has meaningful differences, but does not have a true zero.
+An **interval variable** is numerical and has meaningful differences, but no true zero.
 
-A common example is temperature in Celsius.
+A common example is temperature measured in Celsius.
 
 The difference between \(20^\circ C\) and \(30^\circ C\) is meaningful.
 
@@ -125,7 +130,7 @@ But \(0^\circ C\) does not mean absence of temperature.
 
 ## Ratio scale
 
-A ratio variable is numerical, has meaningful differences, and has a true zero.
+A **ratio variable** is numerical, has meaningful differences, and has a true zero.
 
 Examples:
 
@@ -138,21 +143,52 @@ Examples:
 
 For ratio variables, ratios are meaningful.
 
-If one person weighs 80 kg and another weighs 40 kg, it is meaningful to say the first person weighs twice as much.
+If one person weighs 80 kg and another weighs 40 kg, it is meaningful to say:
+
+$$
+80 = 2 \times 40.
+$$
+
+So the first person weighs twice as much.
 
 ---
 
-## Mini conversation: why scale matters
+## Mini conversation: choosing summaries
 
-**James:** Why does it matter whether a variable is nominal, ordinal, interval, or ratio?
+**Emma:** For nominal data, we should use frequencies and proportions.
 
-**Mr. R:** Because the measurement scale tells us what mathematical operations are meaningful.
+**Mr. R:** Correct.
 
-**Emma:** For nominal data, we can count categories.
+**Sophia:** For quantitative data, we may use means, variances, and standard deviations.
 
-**Sophia:** For ratio data, we can calculate means, differences, and ratios.
+**Mr. R:** Yes, if those summaries are meaningful for the context.
 
-**Mr. R:** Exactly.
+**James:** So data type controls interpretation.
+
+**Mr. R:** Exactly. A method is not just a calculation. It must match the meaning of the data.
+
+---
+
+## Quick activity
+
+Classify each variable:
+
+1. Blood group
+2. Pain severity: mild, moderate, severe
+3. Temperature in Celsius
+4. Age in years
+5. Student ID number
+
+<details>
+<summary>Show suggested answer</summary>
+
+1. Blood group: nominal.  
+2. Pain severity: ordinal.  
+3. Temperature in Celsius: interval.  
+4. Age in years: ratio.  
+5. Student ID number: nominal identifier, not a quantitative measurement.
+
+</details>
 
 ---
 
@@ -160,7 +196,7 @@ If one person weighs 80 kg and another weighs 40 kg, it is meaningful to say the
 
 ### Common mistake: treating all numbers as measurements
 
-Some variables look numerical but are actually labels.
+A number is not always a quantity.
 
 For example:
 
@@ -168,7 +204,7 @@ $$
 \text{Student ID} = 10452
 $$
 
-This is not a measurement. It is an identifier.
+This is a label, not a measurement.
 
 It would not make sense to calculate the mean student ID.
 
@@ -176,9 +212,9 @@ It would not make sense to calculate the mean student ID.
 
 ## Key takeaway
 
-The type of variable determines the type of statistical reasoning.
+The type of variable determines what statistical summaries are meaningful.
 
-A useful structure is:
+A useful chain is:
 
 $$
 \text{Variable}
@@ -194,10 +230,11 @@ $$
 
 ## Reflection question
 
-Classify each variable as nominal, ordinal, interval, or ratio:
+Why would it be inappropriate to calculate the average of blood group categories?
 
-1. Blood group
-2. Pain severity: mild, moderate, severe
-3. Temperature in Celsius
-4. Age in years
-5. Student ID number
+<details>
+<summary>Show suggested answer</summary>
+
+Blood group is nominal. Its categories have no numerical distance or order. Therefore, calculating an average blood group has no meaningful interpretation.
+
+</details>

@@ -2,31 +2,34 @@
 title: Lecture 2 - Populations, Samples and Variables
 parent: Lectures
 nav_order: 2
+permalink: /lectures/02-populations-samples-and-variables/
 ---
 
 # Lecture 2: Populations, Samples and Variables
 
 ## Opening scene
 
-Scene: Mr. R enters the classroom with a small box of paper slips.
+Scene: Mr. R places a box of folded paper slips on the desk.
 
-**Mr. R:** Today, we will talk about three words that appear everywhere in statistics: population, sample, and variable.
+**Mr. R:** Today we will discuss three ideas that appear in almost every statistical study: population, sample, and variable.
 
-**Oliver:** I remember population and sample from the first lecture. The population is the full group, and the sample is the part we observe.
+**Oliver:** Population and sample were in the first lecture. Population is the full group, and sample is the part we observe.
 
-**Mr. R:** Correct. But today we will make those ideas more precise.
+**Mr. R:** Correct.
 
-**Emma:** And variables are the things we measure?
+**Emma:** And variable means the characteristic we measure?
 
-**Mr. R:** Exactly. A variable is a characteristic that can take different values across individuals or units.
+**Mr. R:** Exactly.
+
+**James:** Why are these ideas so important?
+
+**Mr. R:** Because if we are unclear about who we are studying and what we are measuring, the rest of the analysis becomes unclear.
 
 ---
 
 ## Today's big question
 
-How do we clearly define what we are studying?
-
-Before doing statistics, we must identify:
+Before analysing data, we must ask:
 
 $$
 \text{Who or what is being studied?}
@@ -38,37 +41,36 @@ $$
 \text{What is being measured?}
 $$
 
-These questions lead to the ideas of population, sample, observational unit, and variable.
+These two questions lead to four important ideas:
+
+- population;
+- sample;
+- observational unit;
+- variable.
 
 ---
 
 ## Population
 
-**Mr. R:** A population is the full set of units about which we want to make a conclusion.
+A **population** is the complete collection of individuals, objects, or outcomes about which we want to draw conclusions.
 
-**James:** Units means people?
+**Mr. R:** Suppose we ask: What is the average height of students at a university?
 
-**Mr. R:** Sometimes. But not always. Units may be people, households, schools, hospitals, blood samples, plants, countries, or repeated measurements.
+**Oliver:** Then the population is all students at that university.
 
-**Emma:** So the population depends on the research question.
+**Mr. R:** Correct.
 
-**Mr. R:** Exactly.
+**Emma:** If we ask about adults in Bristol, the population is all adults in Bristol.
 
-For example:
-
-| Research question | Population |
-|---|---|
-| What is the mean height of students in a university? | All students in that university |
-| What proportion of households own a car? | All households in the target region |
-| What is the average waiting time in a hospital clinic? | All patient visits to that clinic |
+**Mr. R:** Exactly. The population depends on the research question.
 
 ---
 
 ## Sample
 
-A sample is the subset of the population that is actually observed.
+A **sample** is the subset of the population that is actually observed.
 
-If the population is
+If the population is denoted by
 
 $$
 \mathcal{P} = \{1,2,\ldots,N\},
@@ -86,50 +88,51 @@ $$
 \mathcal{S} \subseteq \mathcal{P}.
 $$
 
-**Sophia:** So mathematically, the sample is a subset of the population.
+**Sophia:** So mathematically, a sample is a subset of the population.
 
-**Mr. R:** Yes. But in real studies, how that subset is selected matters greatly.
+**Mr. R:** Correct. But in statistics, the way that subset is selected is very important.
 
 ---
 
 ## Observational unit
 
-**Emma:** What is an observational unit?
+The **observational unit** is the basic unit on which measurements are taken.
 
-**Mr. R:** The observational unit is the basic object on which measurements are taken.
+**Mr. R:** If we measure the height of students, what is the observational unit?
 
-If we measure the height of students, the observational unit is a student.
+**Emma:** A student.
 
-If we measure annual income of households, the observational unit is a household.
+**Mr. R:** Correct.
 
-If we measure hospital waiting time for visits, the observational unit is a patient visit.
+**James:** If we measure waiting time in a hospital clinic?
 
-**James:** So the observational unit must be clear before defining variables.
+**Mr. R:** Then the observational unit might be a patient visit.
 
-**Mr. R:** Exactly.
+**Oliver:** So the observational unit is not always a person?
+
+**Mr. R:** Exactly. It could be a person, household, school, hospital, country, plant, animal, or repeated measurement.
 
 ---
 
 ## Variable
 
-A variable is a characteristic measured on each observational unit.
+A **variable** is a characteristic measured on each observational unit.
 
 Examples:
 
-| Observational unit | Variable |
-|---|---|
-| Student | Height |
-| Patient | Blood pressure |
-| Household | Number of family members |
-| City | Annual rainfall |
+- height of a student;
+- blood pressure of a patient;
+- income of a household;
+- rainfall in a city;
+- number of children in a family.
 
-If a variable is denoted by \(X\), then the observed value for the \(i\)-th unit may be written as
+If the variable is denoted by \(X\), then the value for the \(i\)-th unit is written as
 
 $$
 x_i.
 $$
 
-For \(n\) observed units, the data may be written as
+For \(n\) observed units, the data are
 
 $$
 x_1, x_2, \ldots, x_n.
@@ -139,53 +142,86 @@ $$
 
 ## Mini conversation: why definitions matter
 
-**Oliver:** Sometimes I feel these definitions are obvious.
+**James:** This sounds simple. Why do students get confused?
 
-**Mr. R:** They may look obvious, but unclear definitions can create serious confusion.
+**Mr. R:** Because in real examples, the population and observational unit are not always obvious.
 
-**James:** Can you give an example?
+Suppose we ask:
 
-**Mr. R:** Suppose we ask: What is the average income in a city? Are we measuring individuals, households, or working adults only?
+> What is the average income in a city?
 
-**Emma:** Those would give different answers.
+**Emma:** We must ask whether income is measured for individuals, households, workers, or adults.
 
-**Mr. R:** Exactly. The population and observational unit must be clearly defined.
+**Mr. R:** Exactly. Those are different observational units and may lead to different conclusions.
+
+**Sophia:** So the mathematical analysis depends on the conceptual definition.
+
+**Mr. R:** Very well said.
+
+---
+
+## Quick activity
+
+For each question, identify the population and variable.
+
+### Question 1
+
+What is the average exam score of Year 10 students in a school?
+
+### Question 2
+
+What proportion of households in a city own a car?
+
+### Question 3
+
+What is the average waiting time for patients attending a clinic?
+
+<details>
+<summary>Show suggested answer</summary>
+
+1. Population: all Year 10 students in the school. Variable: exam score.  
+2. Population: all households in the city. Variable: car ownership status.  
+3. Population: patient visits to the clinic. Variable: waiting time.
+
+</details>
 
 ---
 
 ## Common mistake
 
-### Common mistake: confusing population with sample
+### Common mistake: calling the sample the population
 
-A sample of 500 adults is not the population.
+A sample of 300 adults is not the population.
 
 It is only the observed part of the population.
 
-The purpose of statistical inference is often to use sample information to learn about the population.
+The population is the wider group about which we want to draw conclusions.
 
 ---
 
 ## Key takeaway
 
-Before analysing data, always identify:
+Every statistical study should begin with this chain:
 
 $$
+\text{Research question}
+\rightarrow
 \text{Population}
-\quad \rightarrow \quad
+\rightarrow
 \text{Sample}
-\quad \rightarrow \quad
+\rightarrow
 \text{Observational unit}
-\quad \rightarrow \quad
+\rightarrow
 \text{Variable}.
 $$
 
-A statistical study becomes clearer when these four ideas are clearly defined.
+If this chain is unclear, the analysis will also be unclear.
 
 ---
 
 ## Reflection question
 
-A school records the exam marks of 60 students from Year 10 to understand the performance of all Year 10 students.
+A hospital records the blood pressure of 250 patients with diabetes and wants to understand blood pressure among diabetic patients attending that hospital.
 
 Identify:
 
@@ -193,3 +229,10 @@ Identify:
 - the sample;
 - the observational unit;
 - the variable.
+
+<details>
+<summary>Show suggested answer</summary>
+
+The population is diabetic patients attending that hospital, depending on the intended target group. The sample is the 250 recorded patients. The observational unit is a patient. The variable is blood pressure.
+
+</details>

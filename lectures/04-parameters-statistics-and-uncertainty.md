@@ -2,6 +2,7 @@
 title: Lecture 4 - Parameters, Statistics and Uncertainty
 parent: Lectures
 nav_order: 4
+permalink: /lectures/04-parameters-statistics-and-uncertainty/
 ---
 
 # Lecture 4: Parameters, Statistics and Uncertainty
@@ -14,11 +15,15 @@ $$
 \mu \quad \text{and} \quad \bar{x}
 $$
 
-**Oliver:** I recognise \(\bar{x}\). That is the sample mean.
+**Oliver:** I remember \(\bar{x}\). It is the sample mean.
 
 **Emma:** And \(\mu\) is the population mean.
 
 **Mr. R:** Correct. Today we will understand why this distinction is one of the most important ideas in statistics.
+
+**James:** Is this where uncertainty enters?
+
+**Mr. R:** Exactly. The difference between population quantities and sample quantities leads naturally to uncertainty.
 
 ---
 
@@ -26,30 +31,27 @@ $$
 
 What is the difference between the true population value and the value calculated from sample data?
 
-In statistics, we often distinguish between:
+In statistics, we distinguish between:
 
 $$
-\text{parameter}
-\quad \text{and}
-\quad
-\text{statistic}.
+\text{Parameter}
+\quad \text{and} \quad
+\text{Statistic}.
 $$
 
 ---
 
 ## Parameter
 
-A parameter is a numerical feature of a population.
+A **parameter** is a numerical feature of a population.
 
 Examples:
 
-| Parameter | Meaning |
-|---|---|
-| \(\mu\) | population mean |
-| \(\sigma^2\) | population variance |
-| \(p\) | population proportion |
+- population mean: \(\mu\);
+- population variance: \(\sigma^2\);
+- population proportion: \(p\).
 
-If a population has values
+If the population values are
 
 $$
 X_1, X_2, \ldots, X_N,
@@ -67,13 +69,17 @@ $$
 \sigma^2 = \frac{1}{N}\sum_{i=1}^{N}(X_i-\mu)^2.
 $$
 
+**Sophia:** These are fixed values if the population is fixed?
+
+**Mr. R:** Yes. Parameters are usually treated as fixed but unknown.
+
 ---
 
 ## Statistic
 
-A statistic is a numerical feature calculated from sample data.
+A **statistic** is a numerical feature calculated from sample data.
 
-If a sample has values
+If the sample values are
 
 $$
 x_1, x_2, \ldots, x_n,
@@ -85,89 +91,95 @@ $$
 \bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i.
 $$
 
-The sample variance is commonly written as
+The sample variance is
 
 $$
 s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2.
 $$
 
-**Sophia:** Why do we use \(n-1\) instead of \(n\)?
+**Emma:** So the statistic is known once we observe the sample.
 
-**Mr. R:** That question leads to the idea of unbiased estimation. We will study it properly later. For now, remember that \(s^2\) is used to estimate the population variance \(\sigma^2\).
+**Mr. R:** Correct.
 
 ---
 
-## Mini conversation: known and unknown
+## Mini conversation: fixed but unknown versus observed
 
-**Oliver:** Do we usually know the parameter?
+**Oliver:** If \(\mu\) is fixed, why do we not just use it?
 
-**Mr. R:** Usually, no. If we knew the population parameter exactly, we would not need to estimate it.
+**Mr. R:** Because we usually do not know it. We would need to observe the whole population.
 
-**Emma:** So the statistic is calculated from the sample and used to estimate the parameter.
+**James:** So we use \(\bar{x}\) to estimate \(\mu\).
 
 **Mr. R:** Exactly.
 
-**James:** So statistics is a bridge from what we observe to what we want to know.
+**Sophia:** But before the sample is selected, \(\bar{X}\) is random.
 
-**Mr. R:** Very well said.
+**Mr. R:** Very important point. Before observing the data, the sample mean is written as
+
+$$
+\bar{X} = \frac{1}{n}\sum_{i=1}^{n}X_i.
+$$
+
+After observing the data, it becomes the realised value
+
+$$
+\bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i.
+$$
 
 ---
 
-## Uncertainty
+## Why uncertainty appears
 
-Suppose we take one sample and calculate \(\bar{x}\).
+Different samples can produce different values of \(\bar{x}\).
 
-Then we take another sample and calculate another \(\bar{x}\).
+So although \(\mu\) is fixed, \(\bar{X}\) varies from sample to sample.
 
-The two sample means may differ.
+This is sampling variation.
 
-This variation occurs because samples differ.
-
-So we may write:
+The central question becomes:
 
 $$
-\bar{X} \neq \mu
+\text{How far might } \bar{X} \text{ be from } \mu?
 $$
 
-in general, but we hope that \(\bar{X}\) is close to \(\mu\).
+That question leads to:
+
+- standard error;
+- sampling distributions;
+- confidence intervals;
+- hypothesis testing.
 
 ---
 
-## Sampling variation
+## Quick activity
 
-**Mr. R:** The sample mean is not fixed before the sample is selected. It is a random quantity.
+A sample of 150 adults gives a mean systolic blood pressure of 128 mmHg.
 
-**Sophia:** So before observing the data, we should write it as \(\bar{X}\), not \(\bar{x}\)?
+Identify:
 
-**Mr. R:** Correct. \(\bar{X}\) is a random variable. After observing data, its realised value is \(\bar{x}\).
+1. The statistic.
+2. The possible parameter being estimated.
+3. The reason uncertainty exists.
 
-This distinction is important:
+<details>
+<summary>Show suggested answer</summary>
 
-$$
-\bar{X} = \frac{1}{n}\sum_{i=1}^{n}X_i
-$$
+The statistic is the sample mean, 128 mmHg. The parameter being estimated may be the population mean systolic blood pressure among the target adult population. Uncertainty exists because the sample is only one subset of the population, and another sample may give a different mean.
 
-is a random variable.
-
-After observing data,
-
-$$
-\bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i
-$$
-
-is a number.
+</details>
 
 ---
 
 ## Common mistake
 
-### Common mistake: assuming the sample value is the truth
+### Common mistake: treating a statistic as the exact truth
 
 A sample mean is not automatically the population mean.
 
 A sample proportion is not automatically the population proportion.
 
-A statistic is an estimate, and estimates are uncertain.
+A statistic is an estimate, and estimates contain uncertainty.
 
 ---
 
@@ -185,14 +197,21 @@ $$
 \text{Sample world: statistics}.
 $$
 
-The goal of inference is to use statistics to learn about parameters while honestly accounting for uncertainty.
+Inference uses statistics to learn about parameters while accounting for uncertainty.
 
 ---
 
 ## Reflection question
 
-A sample of 150 adults gives an average systolic blood pressure of 128 mmHg.
+Suppose a survey of 800 voters finds that 54% support a candidate.
 
-Is 128 mmHg a parameter or a statistic?
+Is 54% a parameter or a statistic?
 
-What population parameter might it be estimating?
+What parameter might it estimate?
+
+<details>
+<summary>Show suggested answer</summary>
+
+The 54% is a sample statistic. It may estimate the population proportion of all target voters who support the candidate.
+
+</details>

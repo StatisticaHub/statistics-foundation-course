@@ -2,163 +2,218 @@
 title: Lecture 1 - Introduction to Statistics
 parent: Lectures
 nav_order: 1
+permalink: /lectures/01-introduction-to-statistics/
 ---
 
 # Lecture 1: Introduction to Statistics
 
 ## Opening scene
 
-Scene: A quiet classroom. Mr. R writes one question on the board:
+Scene: A classroom on the first day of the Statistics Foundation course.
+
+Mr. R writes one question on the board:
 
 > How can we learn from data when we cannot observe everything?
 
-**Oliver:** Mr. R, I have seen statistics in many places: averages, percentages, surveys, graphs, and exam results. But I still do not understand what statistics really means.
+**Oliver:** Mr. R, I have seen statistics everywhere: averages, percentages, charts, surveys, exam results. But I still do not really understand what statistics *is*.
 
-**Mr. R:** That is a good starting point, Oliver. Many people think statistics is only about calculation. But statistics is much deeper than that.
+**Mr. R:** That is a very honest place to begin, Oliver. Many people think statistics is just calculation. But statistics is much more than that.
 
-**Emma:** Is statistics mainly about organising data clearly?
+**Emma:** Is it about organising data properly?
 
-**Mr. R:** That is one part of it. Statistics helps us collect, organise, summarise, analyse, and interpret data.
+**Mr. R:** Yes, that is one part. But the deeper purpose of statistics is to help us make sense of data when there is uncertainty.
 
-**James:** But why do we need a whole subject for that? Can we not just look at the numbers?
+**James:** What kind of uncertainty?
 
-**Mr. R:** Sometimes looking is enough. But often, the data are incomplete, noisy, variable, and uncertain. Statistics gives us a disciplined way to reason from such data.
+**Mr. R:** The uncertainty that appears when we do not observe everything, when data vary from person to person, and when we use a small amount of information to say something about a larger group.
 
-**Sophia:** So statistics is really about uncertainty?
+**Sophia:** So statistics is connected to inference?
 
-**Mr. R:** Exactly. Statistics is the science of learning from data under uncertainty.
+**Mr. R:** Exactly. Statistics gives us the language and tools to move from observed data to reasonable conclusions.
 
 ---
 
 ## Today's big question
 
-What is statistics, and why is it needed?
+What is statistics, and why do we need it?
 
-Statistics helps us move from:
+A simple way to describe statistics is:
 
 $$
-\text{observed data}
-\quad \longrightarrow \quad
-\text{meaningful conclusions}.
+\text{Statistics} = \text{Learning from data under uncertainty}.
 $$
 
-But the movement is not automatic. We need careful reasoning.
+The key words are:
+
+- **data**: the information we observe;
+- **uncertainty**: the fact that data vary and are often incomplete;
+- **learning**: the process of drawing conclusions carefully.
 
 ---
 
 ## Intuition first
 
-**Mr. R:** Suppose a university wants to know the average height of all its students.
+**Mr. R:** Suppose we want to know the average height of all students in a university.
 
-**Oliver:** They could measure every student.
+**Oliver:** We can measure everyone.
 
-**Mr. R:** Yes, but imagine the university has 20,000 students. Measuring everyone may be expensive and time-consuming.
+**Mr. R:** In theory, yes. But suppose the university has 20,000 students.
 
-**James:** So we measure only some students?
+**James:** That would take too much time.
 
-**Mr. R:** Correct. We select a sample, say 200 students, and calculate their average height.
+**Mr. R:** Correct. So we may select 200 students and measure their heights.
 
-**Emma:** Then the problem is whether those 200 students represent the whole university.
+**Emma:** Then we use those 200 students to understand the full group?
 
-**Mr. R:** Exactly. That is where statistics begins.
+**Mr. R:** Yes. That is one of the central ideas of statistics.
+
+The full group is called the **population**.
+
+The smaller observed group is called the **sample**.
 
 ---
 
-## Population and sample
+## A first mathematical bridge
 
-The **population** is the complete group we want to study.
-
-The **sample** is the smaller group we actually observe.
-
-If the population contains \(N\) values,
+Suppose the population has \(N\) values:
 
 $$
-X_1, X_2, \ldots, X_N,
+X_1, X_2, \ldots, X_N.
 $$
 
-then the population mean is
+The population mean is
 
 $$
 \mu = \frac{1}{N}\sum_{i=1}^{N}X_i.
 $$
 
-If the sample contains \(n\) values,
+But in practice, we may observe only \(n\) values:
 
 $$
-x_1, x_2, \ldots, x_n,
+x_1, x_2, \ldots, x_n.
 $$
 
-then the sample mean is
+The sample mean is
 
 $$
 \bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i.
 $$
 
----
-
-## Mini conversation: statistic versus parameter
-
-**Emma:** Mr. R, what is the difference between \(\mu\) and \(\bar{x}\)?
-
-**Mr. R:** Good question. \(\mu\) is a **parameter** because it describes the population. \(\bar{x}\) is a **statistic** because it is calculated from the sample.
-
-**Oliver:** So a statistic is something we know, and a parameter is something we want to know?
-
-**Mr. R:** Very often, yes.
-
-**Sophia:** And \(\bar{x}\) is used to estimate \(\mu\)?
+**Sophia:** So \(\mu\) describes the population, and \(\bar{x}\) describes the sample?
 
 **Mr. R:** Exactly.
 
 ---
 
-## Why uncertainty appears
+## Mini conversation: why uncertainty matters
 
-**James:** If we take another sample of 200 students, will we get the same \(\bar{x}\)?
+**Oliver:** If \(\bar{x}\) is calculated from the sample, can we just say it is equal to \(\mu\)?
 
-**Mr. R:** Usually not. Different samples usually give different results.
+**Mr. R:** Usually, no. The sample mean may be close to the population mean, but it is not guaranteed to be exactly equal.
 
-**Emma:** That means the sample result can vary.
+**Emma:** Because a different sample may give a different sample mean?
 
-**Mr. R:** Correct. This is called **sampling variation**.
+**Mr. R:** Correct. That is called **sampling variation**.
 
-The central issue in statistics is not only calculating a statistic. It is understanding how much that statistic may vary from sample to sample.
+**James:** So statistics is not just about calculating \(\bar{x}\). It is about deciding how much we can trust it.
+
+**Mr. R:** Very good. That is the heart of statistical thinking.
+
+---
+
+## Two sides of statistics
+
+Statistics has two broad roles.
+
+### 1. Descriptive statistics
+
+Descriptive statistics summarises the data we have.
+
+Examples include:
+
+- mean;
+- median;
+- standard deviation;
+- tables;
+- graphs.
+
+### 2. Inferential statistics
+
+Inferential statistics uses sample data to make conclusions about a wider population.
+
+For example:
+
+$$
+\text{Sample information} \longrightarrow \text{Population conclusion}.
+$$
 
 ---
 
 ## Common mistake
 
-### Common mistake: thinking statistics is only arithmetic
+### Common mistake: thinking statistics is only about formulas
 
-Statistics is not simply the calculation of means, percentages, or graphs.
+**Oliver:** Sometimes statistics feels like memorising formulas.
 
-Those are tools.
+**Mr. R:** That is a common feeling. But formulas are not the real goal. Formulas are tools.
 
-The deeper purpose of statistics is to answer questions such as:
+The real goal is to answer questions such as:
 
 - What does the data suggest?
 - How uncertain is the conclusion?
-- Can the result be generalised?
-- Could the pattern be due to chance?
+- Can we generalise from the sample to the population?
+- Could the result be due to chance?
 - What assumptions are being made?
+
+---
+
+## Reality check
+
+Suppose a survey asks 500 people whether they support a new policy.
+
+The result is:
+
+$$
+\hat{p} = 0.62.
+$$
+
+This means 62% of the sample supports the policy.
+
+But before saying “62% of the population supports the policy”, we should ask:
+
+- How were the 500 people selected?
+- Were they representative?
+- How large is the sampling uncertainty?
+- Was the question worded fairly?
+- Could non-response bias affect the result?
+
+Statistics forces us to slow down and think carefully.
 
 ---
 
 ## Key takeaway
 
-Statistics is the science of learning from data under uncertainty.
+Statistics is not only about numbers.
 
-A useful way to remember the subject is:
+Statistics is about using data to reason under uncertainty.
+
+A useful summary is:
 
 $$
-\text{Data} + \text{Probability} + \text{Reasoning}
-= \text{Statistical Inference}.
+\text{Data} + \text{Variation} + \text{Probability} = \text{Statistical reasoning}.
 $$
 
 ---
 
 ## Reflection question
 
-Suppose a researcher measures the blood pressure of 100 adults in a city and calculates the average.
+A researcher measures the blood pressure of 100 adults in Bristol and calculates the average.
 
-Before using this average to describe the whole city, what questions should we ask?
+Before using this average to describe all adults in Bristol, what questions should we ask?
+
+<details>
+<summary>Show suggested answer</summary>
+
+We should ask how the 100 adults were selected, whether they represent the target population, how variable blood pressure is, whether the sample size is large enough, and how much uncertainty surrounds the sample average.
+
+</details>
