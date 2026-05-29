@@ -3,32 +3,46 @@ title: About
 description: About the Statistics Foundation course.
 ---
 
+Statistics Foundation is a theoretical, beginner-friendly course developed by StatisticaHub.
 
-Statistics Foundation is a theoretical course created by StatisticaHub.
+The course is designed for students who want to build a strong foundation in statistics before moving into biostatistics, epidemiology, machine learning, data science, research methods, or quantitative analysis.
 
-The course avoids coding and focuses on:
+## Course approach
 
+This course avoids coding and focuses on:
+
+- conceptual clarity;
+- mathematical notation;
 - statistical reasoning;
-- mathematical definitions;
-- probability foundations;
 - derivations;
 - interpretation;
-- conceptual clarity.
+- theoretical understanding;
+- exam-style practice.
 
-## Teaching approach
+## Teaching style
 
-Lectures are conversational and character-based.
+Lectures are written as classroom conversations using five recurring characters:
 
-Notes are descriptive, formal, and mathematical.
+| Character | Role |
+|---|---|
+| Mr. R | Teacher and mentor |
+| Oliver | Curious beginner |
+| Emma | Careful and methodical student |
+| James | Practical thinker |
+| Sophia | Mathematically strong student |
 
-Exercises focus on definitions, interpretation, and derivations.
+Notes are more formal, descriptive, and mathematical.
 
-## Main rule
+Exercises are intentionally challenging and include conceptual, applied, mathematical, and proof-style questions.
 
-No R.
+## Copyright and use
 
-No Python.
+Course developed by StatisticaHub.
 
-No coding.
+© 2026 My Academic Tutor. All rights reserved.
 
-No software tutorials.
+The course materials on this website, including lectures, notes, exercises, explanations, structure, mathematical exposition, examples, and original written content, are protected by copyright.
+
+The materials may not be copied, reproduced, distributed, republished, sold, uploaded elsewhere, or adapted without prior written permission from My Academic Tutor.
+
+Short quotations may be used for fair academic reference with clear attribution, where permitted by applicable law.

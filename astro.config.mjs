@@ -21,6 +21,11 @@ export default defineConfig({
 
       customCss: ['./src/styles/custom.css'],
 
+      components: {
+        Footer: './src/components/Footer.astro',
+        ThemeSelect: './src/components/Empty.astro',
+      },
+
       head: [
         {
           tag: 'link',
@@ -44,6 +49,8 @@ export default defineConfig({
         {
           label: 'Lectures',
           items: [
+            { label: 'Lectures Overview', slug: 'lectures' },
+
             {
               label: 'Module 1: Foundations of Statistics',
               items: [
@@ -69,12 +76,40 @@ export default defineConfig({
                 },
               ],
             },
+
+            {
+              label: 'Module 2: Descriptive Statistics',
+              items: [
+                {
+                  label: '6. Tables, Graphs and Data Summaries',
+                  slug: 'lectures/06-tables-graphs-and-data-summaries',
+                },
+                {
+                  label: '7. Measures of Centre',
+                  slug: 'lectures/07-measures-of-centre',
+                },
+                {
+                  label: '8. Measures of Spread',
+                  slug: 'lectures/08-measures-of-spread',
+                },
+                {
+                  label: '9. Position, Shape and Outliers',
+                  slug: 'lectures/09-position-shape-and-outliers',
+                },
+                {
+                  label: '10. Standardisation and Z-scores',
+                  slug: 'lectures/10-standardisation-and-z-scores',
+                },
+              ],
+            },
           ],
         },
 
         {
           label: 'Notes',
           items: [
+            { label: 'Notes Overview', slug: 'notes' },
+
             {
               label: 'Module 1: Foundations of Statistics',
               items: [
@@ -100,12 +135,40 @@ export default defineConfig({
                 },
               ],
             },
+
+            {
+              label: 'Module 2: Descriptive Statistics',
+              items: [
+                {
+                  label: '6. Tables, Graphs and Data Summaries',
+                  slug: 'notes/06-tables-graphs-and-data-summaries',
+                },
+                {
+                  label: '7. Measures of Centre',
+                  slug: 'notes/07-measures-of-centre',
+                },
+                {
+                  label: '8. Measures of Spread',
+                  slug: 'notes/08-measures-of-spread',
+                },
+                {
+                  label: '9. Position, Shape and Outliers',
+                  slug: 'notes/09-position-shape-and-outliers',
+                },
+                {
+                  label: '10. Standardisation and Z-scores',
+                  slug: 'notes/10-standardisation-and-z-scores',
+                },
+              ],
+            },
           ],
         },
 
         {
           label: 'Exercises',
           items: [
+            { label: 'Exercises Overview', slug: 'exercises' },
+
             {
               label: 'Module 1: Foundations of Statistics',
               items: [
@@ -128,6 +191,32 @@ export default defineConfig({
                 {
                   label: '5. Descriptive and Inferential Statistics',
                   slug: 'exercises/05-descriptive-and-inferential-statistics',
+                },
+              ],
+            },
+
+            {
+              label: 'Module 2: Descriptive Statistics',
+              items: [
+                {
+                  label: '6. Tables, Graphs and Data Summaries',
+                  slug: 'exercises/06-tables-graphs-and-data-summaries',
+                },
+                {
+                  label: '7. Measures of Centre',
+                  slug: 'exercises/07-measures-of-centre',
+                },
+                {
+                  label: '8. Measures of Spread',
+                  slug: 'exercises/08-measures-of-spread',
+                },
+                {
+                  label: '9. Position, Shape and Outliers',
+                  slug: 'exercises/09-position-shape-and-outliers',
+                },
+                {
+                  label: '10. Standardisation and Z-scores',
+                  slug: 'exercises/10-standardisation-and-z-scores',
                 },
               ],
             },

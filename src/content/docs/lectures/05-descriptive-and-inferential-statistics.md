@@ -1,18 +1,17 @@
 ---
 title: "Lecture 5: Descriptive and Inferential Statistics"
-description: "Understanding the difference between summarising data and generalising from data."
+description: "Understanding the difference between summarising observed data and generalising beyond it."
 ---
-
 
 ## Opening scene
 
 Scene: Mr. R draws two columns on the board.
 
-The first column says:
+The first says:
 
 > Describe what we observed.
 
-The second column says:
+The second says:
 
 > Infer beyond what we observed.
 
@@ -24,27 +23,25 @@ The second column says:
 
 **Mr. R:** Correct.
 
-**James:** And inferential statistics uses data to make wider conclusions.
+**James:** Inferential statistics uses the data to make wider conclusions.
 
 **Mr. R:** Exactly.
 
-## Today's big question
+**Sophia:** And inference needs probability because we are reasoning beyond the observed sample.
+
+**Mr. R:** Very good.
+
+:::note[Today's big question]
 
 What is the difference between describing data and making inference from data?
 
-Statistics has two broad purposes:
-
-$$
-\text{description}
-\quad \text{and} \quad
-\text{inference}.
-$$
+:::
 
 ## Descriptive statistics
 
 Descriptive statistics summarises the data that have been observed.
 
-Suppose we observe
+Suppose we observe:
 
 $$
 x_1, x_2, \ldots, x_n.
@@ -52,16 +49,14 @@ $$
 
 We may summarise these values using:
 
+- tables;
+- graphs;
 - mean;
 - median;
-- minimum;
-- maximum;
 - variance;
-- standard deviation;
-- tables;
-- graphs.
+- standard deviation.
 
-For example, the sample mean is
+For example, the sample mean is:
 
 $$
 \bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i.
@@ -75,7 +70,7 @@ Inferential statistics uses sample data to make conclusions about a larger popul
 
 For example, we may want to estimate the population mean $\mu$.
 
-We calculate the sample mean $\bar{x}$ and use it as an estimate of $\mu$.
+We calculate $\bar{x}$ and use it as an estimate of $\mu$.
 
 The movement is:
 
@@ -85,29 +80,44 @@ $$
 \mu.
 $$
 
-But because $\bar{x}$ comes from a sample, we must consider uncertainty.
+But because $\bar{x}$ is based on a sample, we must consider uncertainty.
 
-A simple inferential form is:
+A simple inferential statement often has the form:
 
 $$
 \text{estimate} \pm \text{margin of error}.
 $$
 
-Later, this idea becomes a confidence interval.
+## Mini conversation: same number, different purpose
+
+**Oliver:** If I calculate the average mark of 40 students, is that descriptive?
+
+**Mr. R:** Yes, if you only describe those 40 students.
+
+**Emma:** But if I use those 40 students to estimate the average mark of all students, it becomes inferential.
+
+**Mr. R:** Correct.
+
+**James:** So the same statistic can be descriptive or inferential depending on the question.
+
+**Mr. R:** Exactly.
+
+## Descriptive versus inferential questions
+
+| Question | Type |
+|---|---|
+| What is the mean height of these 30 students? | Descriptive |
+| What is the estimated mean height of all students? | Inferential |
+| What percentage of this sample smokes? | Descriptive |
+| What proportion of adults in the city smoke? | Inferential |
 
 ## Common mistake
 
-It is common to describe a sample and then speak as if the result automatically applies to the population.
+:::caution[Common mistake]
 
-This is dangerous.
+Do not generalise from a sample to a population without thinking about sampling, variability, assumptions, and uncertainty.
 
-To generalise from a sample to a population, we must think about:
-
-- sampling method;
-- sample size;
-- variability;
-- assumptions;
-- uncertainty.
+:::
 
 ## Key takeaway
 
@@ -122,10 +132,6 @@ Inferential statistics answers:
 $$
 \text{What can the observed data tell us about a wider population?}
 $$
-
-Description summarises.
-
-Inference generalises.
 
 ## Reflection question
 

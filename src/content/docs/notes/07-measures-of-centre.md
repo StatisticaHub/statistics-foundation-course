@@ -1,0 +1,231 @@
+---
+title: "Note 7: Measures of Centre"
+description: "Detailed notes on mean, median, mode, and their interpretation."
+---
+
+## Learning objectives
+
+By the end of this note, you should be able to:
+
+- define the mean, median, and mode;
+- calculate the sample mean conceptually;
+- explain the mean as a balance point;
+- derive the zero-sum property of deviations from the mean;
+- explain when the median is preferable to the mean;
+- understand the use of the mode;
+- choose an appropriate measure of centre.
+
+## 1. Introduction
+
+A measure of centre describes a typical or central value in a dataset.
+
+Suppose we observe:
+
+$$
+x_1,x_2,\ldots,x_n.
+$$
+
+Instead of listing every value, we may want one number that summarises where the data are located.
+
+Common measures of centre are:
+
+- mean;
+- median;
+- mode.
+
+Each measure answers the question “What is typical?” in a different way.
+
+## 2. The mean
+
+The **sample mean** is the arithmetic average of the observations.
+
+It is defined as:
+
+$$
+\bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i.
+$$
+
+Equivalently:
+
+$$
+\bar{x}=\frac{x_1+x_2+\cdots+x_n}{n}.
+$$
+
+The mean uses every observation.
+
+This makes it efficient and mathematically useful, but also sensitive to extreme values.
+
+## 3. Example of the mean
+
+Suppose five marks are:
+
+$$
+60,\ 65,\ 70,\ 75,\ 80.
+$$
+
+Then:
+
+$$
+\bar{x}=\frac{60+65+70+75+80}{5}
+=\frac{350}{5}=70.
+$$
+
+So the mean mark is 70.
+
+## 4. Mean as a balance point
+
+The mean has an important mathematical property:
+
+$$
+\sum_{i=1}^{n}(x_i-\bar{x})=0.
+$$
+
+This means the deviations from the mean add to zero.
+
+### Derivation
+
+Start with:
+
+$$
+\sum_{i=1}^{n}(x_i-\bar{x}).
+$$
+
+Separate the sum:
+
+$$
+\sum_{i=1}^{n}(x_i-\bar{x})
+=
+\sum_{i=1}^{n}x_i-\sum_{i=1}^{n}\bar{x}.
+$$
+
+Since $\bar{x}$ is constant:
+
+$$
+\sum_{i=1}^{n}\bar{x}=n\bar{x}.
+$$
+
+Therefore:
+
+$$
+\sum_{i=1}^{n}(x_i-\bar{x})
+=
+\sum_{i=1}^{n}x_i-n\bar{x}.
+$$
+
+But by definition:
+
+$$
+\bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i.
+$$
+
+So:
+
+$$
+n\bar{x}=\sum_{i=1}^{n}x_i.
+$$
+
+Hence:
+
+$$
+\sum_{i=1}^{n}(x_i-\bar{x})=0.
+$$
+
+:::tip[Interpretation]
+
+The mean is the point where positive and negative deviations balance.
+
+:::
+
+## 5. The median
+
+The **median** is the middle value after the observations are arranged in increasing order.
+
+If $n$ is odd, the median is the value in position:
+
+$$
+\frac{n+1}{2}.
+$$
+
+If $n$ is even, the median is the average of the two middle values.
+
+The median is less affected by extreme values than the mean.
+
+## 6. Example of the median
+
+Suppose the data are:
+
+$$
+4,\ 6,\ 8,\ 10,\ 100.
+$$
+
+The mean is:
+
+$$
+\bar{x}=\frac{4+6+8+10+100}{5}=25.6.
+$$
+
+The median is 8.
+
+In this case, the median better represents the typical value because 100 is an extreme value.
+
+## 7. The mode
+
+The **mode** is the most frequently occurring value or category.
+
+Examples:
+
+- if the most common blood group is O, the mode is O;
+- if the most common exam mark is 70, the mode is 70.
+
+The mode is useful for categorical data, where mean and median may not be meaningful.
+
+## 8. Comparing mean, median, and mode
+
+| Measure | Main idea | Best used when |
+|---|---|---|
+| Mean | Arithmetic average | Data are roughly symmetric and numerical |
+| Median | Middle ordered value | Data are skewed or contain outliers |
+| Mode | Most frequent value | Data are categorical or repeated values matter |
+
+## 9. Skewness and centre
+
+When a distribution is symmetric, the mean and median are often close.
+
+When a distribution is right-skewed, the mean is often greater than the median.
+
+When a distribution is left-skewed, the mean is often less than the median.
+
+For right-skewed data such as income, the median often describes the typical value better than the mean.
+
+## 10. Common mistakes
+
+:::caution[Common mistakes]
+
+Do not use the mean automatically.
+
+Do not calculate the mean of nominal categories.
+
+Do not ignore outliers when interpreting the mean.
+
+Do not report a measure of centre without considering spread.
+
+:::
+
+## 11. Summary
+
+The mean, median, and mode are different measures of centre.
+
+The mean is mathematically powerful but sensitive to extreme values.
+
+The median is resistant to outliers.
+
+The mode identifies the most common value or category.
+
+## Revision questions
+
+1. What is the mean?
+2. What is the median?
+3. What is the mode?
+4. Why do deviations from the mean sum to zero?
+5. Why is the median useful for skewed data?
+6. Why might the mean be misleading for income data?

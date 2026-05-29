@@ -1,24 +1,51 @@
 :root {
-  --sl-content-width: 60rem;
+  --sl-content-width: 62rem;
+  --sl-text-5xl: 3rem;
 }
 
-.katex-display {
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding: 0.75rem 0;
-}
-
+/* Better reading experience */
 .sl-markdown-content {
-  line-height: 1.75;
+  line-height: 1.78;
+  font-size: 1.02rem;
 }
 
+/* More breathing space between sections */
 .sl-markdown-content h2 {
-  margin-top: 2.5rem;
+  margin-top: 2.8rem;
 }
 
+.sl-markdown-content h3 {
+  margin-top: 2rem;
+}
+
+/* Better tables */
+.sl-markdown-content table {
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+/* Better blockquotes */
 .sl-markdown-content blockquote {
   border-left: 4px solid var(--sl-color-accent);
   background: var(--sl-color-gray-6);
-  border-radius: 0.5rem;
-  padding: 0.8rem 1rem;
+  border-radius: 0.75rem;
+  padding: 0.9rem 1.1rem;
+}
+
+/* Better math display */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.9rem 0;
+}
+
+/* Make Starlight asides feel like premium lesson boxes */
+.starlight-aside {
+  border-radius: 0.9rem;
+  margin: 1.4rem 0;
+}
+
+/* Softer lesson spacing */
+.sl-markdown-content p {
+  margin-top: 0.9rem;
 }

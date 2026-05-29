@@ -1,124 +1,152 @@
 ---
 title: "Lecture 1: Introduction to Statistics"
-description: "A conversational introduction to statistics."
+description: "A conversational introduction to statistics as learning from data under uncertainty."
 ---
-
 
 ## Opening scene
 
-Scene: A classroom on the first day of the Statistics Foundation course.
-
-Mr. R writes one question on the board:
+Scene: The first class begins. Mr. R writes one question on the board:
 
 > How can we learn from data when we cannot observe everything?
 
-**Oliver:** Mr. R, I have seen statistics everywhere: averages, percentages, charts, surveys, and exam results. But I still do not really understand what statistics is.
+**Oliver:** Mr. R, I see statistics everywhere: averages, percentages, surveys, charts, and exam results. But I still do not understand what statistics really is.
 
-**Mr. R:** That is a very honest starting point. Many people think statistics is only calculation, but statistics is much deeper than that.
+**Mr. R:** That is a very good place to begin. Many people think statistics is only about calculation. But statistics is much deeper.
 
-**Emma:** Is it about organising data properly?
+**Emma:** Is it about organising data clearly?
 
-**Mr. R:** That is one part of it. Statistics helps us collect, organise, summarise, analyse, and interpret data. But the deeper purpose is to help us reason under uncertainty.
+**Mr. R:** Yes, that is one part. Statistics helps us collect, organise, summarise, analyse, and interpret data.
 
-**James:** What kind of uncertainty?
+**James:** But why do we need a whole subject for that?
 
-**Mr. R:** The uncertainty that appears when we do not observe everything, when data vary from person to person, and when we use a small amount of information to say something about a larger group.
+**Mr. R:** Because data are rarely complete, perfectly clean, or perfectly certain. Statistics gives us a disciplined way to reason from imperfect information.
 
-**Sophia:** So statistics is connected to inference?
+**Sophia:** So statistics is really about uncertainty?
 
-**Mr. R:** Exactly. Statistics gives us the language and tools to move from observed data to reasonable conclusions.
+**Mr. R:** Exactly. Statistics is the science of learning from data under uncertainty.
 
-## Today's big question
+:::note[Today's big question]
 
 What is statistics, and why do we need it?
 
-A useful summary is:
+:::
+
+## The main idea
+
+A simple way to describe statistics is:
 
 $$
 \text{Statistics} = \text{learning from data under uncertainty}.
 $$
 
-The key words are:
+There are three important parts in this sentence:
 
-- **data**: the information we observe;
-- **uncertainty**: the fact that data vary and are often incomplete;
-- **learning**: the process of drawing conclusions carefully.
+| Word | Meaning |
+|---|---|
+| Data | The information we observe |
+| Uncertainty | The fact that data are variable, incomplete, or limited |
+| Learning | Drawing careful conclusions from the data |
 
 ## Intuition first
 
 **Mr. R:** Suppose we want to know the average height of all students in a university.
 
-**Oliver:** We can measure everyone.
+**Oliver:** We could measure every student.
 
 **Mr. R:** In theory, yes. But suppose the university has 20,000 students.
 
-**James:** That would take too much time.
+**James:** That would take a lot of time.
 
-**Mr. R:** Correct. So we may select 200 students and measure their heights.
+**Mr. R:** Exactly. So we might measure only 200 students and use them to learn about the full university.
 
-**Emma:** Then we use those 200 students to understand the full group?
+**Emma:** Then the full group is the population, and the 200 students are the sample.
 
-**Mr. R:** Yes. That is one of the central ideas of statistics.
+**Mr. R:** Correct.
 
-The full group is called the **population**.
+## Population and sample
 
-The smaller observed group is called the **sample**.
+The **population** is the full group we want to understand.
 
-## A first mathematical bridge
+The **sample** is the part of the population we actually observe.
 
-Suppose the population has $N$ values:
+If the population contains $N$ values,
 
 $$
-X_1, X_2, \ldots, X_N.
+X_1, X_2, \ldots, X_N,
 $$
 
-The population mean is
+then the population mean is:
 
 $$
 \mu = \frac{1}{N}\sum_{i=1}^{N}X_i.
 $$
 
-But in practice, we may observe only $n$ values:
+If the sample contains $n$ values,
 
 $$
-x_1, x_2, \ldots, x_n.
+x_1, x_2, \ldots, x_n,
 $$
 
-The sample mean is
+then the sample mean is:
 
 $$
 \bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i.
 $$
 
-**Sophia:** So $\mu$ describes the population, and $\bar{x}$ describes the sample?
+## Mini conversation: can the sample tell the truth?
 
-**Mr. R:** Exactly.
+**Oliver:** If we calculate $\bar{x}$ from the sample, can we just say it equals $\mu$?
 
-## Why uncertainty matters
+**Mr. R:** Usually, no. The sample mean is an estimate of the population mean.
 
-**Oliver:** If $\bar{x}$ is calculated from the sample, can we just say it is equal to $\mu$?
+**Emma:** Because another sample might give a different $\bar{x}$?
 
-**Mr. R:** Usually, no. The sample mean may be close to the population mean, but it is not guaranteed to be exactly equal.
+**Mr. R:** Exactly. That difference between samples is called sampling variation.
 
-**Emma:** Because a different sample may give a different sample mean?
+**Sophia:** So the sample statistic varies, but the population parameter is fixed.
 
-**Mr. R:** Correct. That is called **sampling variation**.
+**Mr. R:** Very good.
 
-**James:** So statistics is not just about calculating $\bar{x}$. It is about deciding how much we can trust it.
+:::tip[Key intuition]
 
-**Mr. R:** Very good. That is the heart of statistical thinking.
+Statistics is not just about calculating a number. It is about understanding what that number can and cannot tell us.
+
+:::
+
+## Descriptive and inferential roles
+
+Statistics has two broad roles.
+
+| Role | Question |
+|---|---|
+| Descriptive statistics | What does the observed data show? |
+| Inferential statistics | What can the observed data tell us about a wider population? |
+
+For example, if we calculate the mean height of 200 students and only describe those 200 students, that is descriptive.
+
+If we use those 200 students to estimate the mean height of all university students, that is inferential.
+
+## Common mistake
+
+:::caution[Common mistake]
+
+Do not treat a sample result as if it is automatically the population truth.
+
+A sample statistic is evidence, not certainty.
+
+:::
 
 ## Key takeaway
 
-Statistics is about using data to reason under uncertainty.
-
-A useful summary is:
+Statistics helps us move from:
 
 $$
-\text{Data} + \text{variation} + \text{probability}
-=
-\text{statistical reasoning}.
+\text{sample information}
+\quad \longrightarrow \quad
+\text{population understanding}.
 $$
+
+But this movement must account for uncertainty.
 
 ## Reflection question
 
