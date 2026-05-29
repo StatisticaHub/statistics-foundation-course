@@ -15,9 +15,9 @@ export default defineConfig({
 
   integrations: [
     starlight({
-      title: 'Statistics Foundation',
+      title: 'Statistics Foundation for University Students',
       description:
-        'A theoretical, beginner-friendly foundation course in statistics by StatisticaHub.',
+        'A theoretical, beginner-friendly foundation course in statistics for university students by My Academic Tutor.',
 
       customCss: ['./src/styles/custom.css'],
 

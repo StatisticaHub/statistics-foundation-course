@@ -3,7 +3,7 @@ title: About
 description: About the Statistics Foundation course.
 ---
 
-Statistics Foundation is a theoretical, beginner-friendly course developed by StatisticaHub.
+Statistics Foundation for University Students is a theoretical, beginner-friendly course developed by StatisticaHub.
 
 The course is designed for students who want to build a strong foundation in statistics before moving into biostatistics, epidemiology, machine learning, data science, research methods, or quantitative analysis.
 

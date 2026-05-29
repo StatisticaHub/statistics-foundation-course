@@ -1,6 +1,6 @@
 ---
-title: Statistics Foundation
-description: A theoretical, beginner-friendly foundation course in statistics.
+title: Statistics Foundation for University Students
+description: A theoretical, beginner-friendly foundation course in statistics for university students.
 ---
 
 <div class="brand-strip">
@@ -10,7 +10,7 @@ description: A theoretical, beginner-friendly foundation course in statistics.
 
 </div>
 
-Statistics Foundation is a theoretical and beginner-friendly course for students who want to build a strong base in statistics before studying biostatistics, epidemiology, data science, machine learning, research methods, or quantitative analysis.
+Statistics Foundation for University Students is a theoretical and beginner-friendly course for students who want to build a strong base in statistics before studying biostatistics, epidemiology, data science, machine learning, research methods, or quantitative analysis.
 
 The course avoids coding and focuses on concepts, notation, mathematical reasoning, derivations, interpretation, and exam-style thinking.
 
