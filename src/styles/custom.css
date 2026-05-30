@@ -396,3 +396,77 @@ starlight-mobile-toc li {
     font-size: 2.15rem;
   }
 }
+
+/* =========================================================
+   Final heading cleanup: remove anchor icons and extra lines
+   ========================================================= */
+
+/* Hide Starlight heading anchor link icons everywhere */
+.sl-heading-wrapper > a,
+.sl-heading-wrapper .anchor-link,
+.sl-heading-wrapper a[aria-hidden='true'],
+.sl-markdown-content :is(h2, h3, h4, h5, h6) a[href^='#'],
+.sl-markdown-content .anchor-link {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Keep heading wrappers clean after hiding the icon */
+.sl-heading-wrapper {
+  display: block !important;
+}
+
+/* Remove the line before every topic/section */
+.sl-markdown-content h2,
+.sl-markdown-content h3,
+.sl-markdown-content h4,
+.sl-markdown-content h5,
+.sl-markdown-content h6 {
+  border-top: none !important;
+  border-bottom: none !important;
+  padding-top: 0 !important;
+  color: var(--navy) !important;
+}
+
+/* Give sections spacing without hard divider lines */
+.sl-markdown-content h2 {
+  margin-top: 2.4rem !important;
+  margin-bottom: 0.9rem !important;
+}
+
+.sl-markdown-content h3 {
+  margin-top: 1.8rem !important;
+  margin-bottom: 0.7rem !important;
+}
+
+/* Keep only the main page title divider */
+.sl-markdown-content h1,
+.content-panel h1 {
+  border-top: none !important;
+  border-bottom: 2px solid var(--border-soft) !important;
+  padding-bottom: 1rem !important;
+}
+
+/* Make the logo circular and more neatly cropped */
+.site-title img,
+.header img,
+.sl-nav img {
+  width: 2.8rem !important;
+  height: 2.8rem !important;
+  max-width: 2.8rem !important;
+  max-height: 2.8rem !important;
+  min-width: 2.8rem !important;
+  border-radius: 999px !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  border: 1px solid var(--border-soft) !important;
+  background: var(--cream-panel) !important;
+}
+
+/* Prevent navbar title from becoming too wide */
+.site-title {
+  max-width: 72vw !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
