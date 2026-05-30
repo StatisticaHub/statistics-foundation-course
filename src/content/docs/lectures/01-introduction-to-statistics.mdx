@@ -3,6 +3,9 @@ title: "Lecture 1: Introduction to Statistics"
 description: "A conversational introduction to statistics as learning from data under uncertainty."
 ---
 
+import QuickQuiz from '../../../components/interactives/QuickQuiz.jsx';
+
+
 ## Opening scene
 
 Scene: The first class begins. Mr. R writes one question on the board:
@@ -135,6 +138,19 @@ Do not treat a sample result as if it is automatically the population truth.
 A sample statistic is evidence, not certainty.
 
 :::
+
+
+## Interactive check
+
+
+<QuickQuiz
+  client:load
+  question="Which statement best describes statistics?"
+  options={["Only the calculation of averages", "Learning from data under uncertainty", "Drawing graphs only", "Collecting numbers without interpretation"]}
+  correct={1}
+  explanation="Statistics is about learning from data while accounting for variation and uncertainty."
+/>
+
 
 ## Key takeaway
 

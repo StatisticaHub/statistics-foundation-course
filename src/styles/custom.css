@@ -470,3 +470,143 @@ starlight-mobile-toc li {
   text-overflow: ellipsis !important;
   white-space: nowrap !important;
 }
+
+
+/* =========================================================
+   Interactive statistics components
+   ========================================================= */
+
+.interactive-box {
+  border: 1px solid var(--border-soft);
+  border-radius: 1rem;
+  padding: 1.2rem;
+  margin: 1.6rem 0;
+  background: var(--cream-panel);
+  box-shadow: 0 4px 16px rgba(16, 32, 51, 0.06);
+}
+
+.interactive-box h3 {
+  margin-top: 0 !important;
+  color: var(--navy) !important;
+}
+
+.interactive-box label {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0.9rem 0;
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.interactive-box input[type='number'],
+.interactive-box input[type='range'] {
+  width: 100%;
+  padding: 0.55rem;
+  border: 1px solid var(--border-soft);
+  border-radius: 0.5rem;
+  background: #fffdf8;
+  color: var(--navy);
+}
+
+.interactive-svg {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border: 1px solid var(--border-soft);
+  border-radius: 0.8rem;
+  background: #fffdf8;
+}
+
+.axis-line {
+  stroke: var(--navy);
+  stroke-width: 2;
+}
+
+.dot-point {
+  fill: var(--navy);
+}
+
+.mean-line {
+  stroke: #8b1e1e;
+  stroke-width: 3;
+  stroke-dasharray: 5 5;
+}
+
+.median-line {
+  stroke: #1f5f3a;
+  stroke-width: 3;
+}
+
+.hist-bar {
+  fill: #d8cfbf;
+  stroke: var(--navy);
+  stroke-width: 1.5;
+}
+
+.svg-label {
+  fill: var(--navy);
+  font-size: 13px;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.quiz-options {
+  display: grid;
+  gap: 0.6rem;
+  margin: 1rem 0;
+}
+
+.quiz-options button {
+  text-align: left;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--border-soft);
+  border-radius: 0.7rem;
+  background: #fffdf8;
+  color: var(--navy) !important;
+  cursor: pointer;
+}
+
+.quiz-options button.selected {
+  border-color: var(--navy);
+  background: var(--cream-soft);
+}
+
+.quiz-correct,
+.quiz-wrong {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+}
+
+.quiz-correct {
+  background: #e7f3e8;
+  color: #174a26 !important;
+}
+
+.quiz-wrong {
+  background: #f7e2df;
+  color: #7a1f1f !important;
+}
+
+.mini-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0;
+}
+
+.mini-stat-grid div {
+  border: 1px solid var(--border-soft);
+  border-radius: 0.75rem;
+  padding: 0.8rem;
+  background: #fffdf8;
+}
+
+@media (max-width: 720px) {
+  .interactive-box {
+    padding: 1rem;
+  }
+
+  .svg-label {
+    font-size: 11px;
+  }
+}
